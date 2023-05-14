@@ -1,0 +1,162 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profile-icon img {
+    width: 30px;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.feed-section {
+    flex: 2;
+}
+
+.message-container {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-sender {
+    font-weight: bold;
+}
+
+.feed-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.post {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.post-details {
+    padding: 10px;
+}
+
+.post-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.post-author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-name {
+    font-weight: bold;
+}
+
+.post-caption {
+    margin-top: 5px;
+}
+
+.post-actions {
+    margin-top: 10px;
+}
+
+.post-actions button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #f0f0f0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-icons img {
+    margin: 0 10px;
+    width: 30px;
+    height: auto;
+    max-height: 30px;
+}
+
+.feed-section {
+    flex: 2;
+    margin-bottom: 50px;
+    /* Add a bottom margin to create space for the footer */
+}
+
+/* Add media queries for responsive design */
+@media screen and (max-width: 768px) {
+    /* CSS rules for smaller screens */
+}
+
+@media screen and (max-width: 480px) {
+    /* CSS rules for mobile screens */
+}
